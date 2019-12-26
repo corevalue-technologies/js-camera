@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Dancing Script', cursive;
+}
+
+html {
+  font-size: 10px;
+  background: #ffc600;
+}
+
+.camera-container {
+  background: transparent;
+  max-width: 50%;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*clearfix*/
+.camera-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.screen {
+  background: lightyellow;
+  width: 100%;
+  min-height: 400px;
+  margin-top: 20px;
+}
+
+.cameraScreen {
+  width: 100%;
+  outline: 4px solid white;
+  outline-offset: 10px;
+  float: left;
+}
+
+.camera {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width:200px;
+  display: none;
+}
+
+/*
+  Strip!
+*/
+
+.pic {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pic img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  background: white;
+}
+
+.controls {
+  text-align: center;
+}
+
+.photobtn {
+  background: white;
+  border-radius: 50%;    
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.photobtn:hover {
+  width: 85px;
+  height: 85px;
+}
+
+.photobtn:hover .inner-circle {
+  width: 65px;
+  height: 65px;
+}
+
+.photobtn:focus {
+  outline: none;
+}
+
+.inner-circle {
+  background: white;
+  border: 4px solid #ffc600;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: auto; 
+  transition: 0.2s all ease-in-out;
+}
