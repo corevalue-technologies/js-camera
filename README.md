@@ -22,4 +22,4 @@ $ cd js-camera
 $ npm install
 $ npm start
 ```
-Then open (http://localhost:3000) to see the application working. And yes now you have a browser based camera.
+Then open (http://localhost:3002) to see the application working. And yes now you have a browser based camera.
